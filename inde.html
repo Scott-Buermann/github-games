@@ -102,10 +102,7 @@
     // blocks: each element represents a rotation of the piece (0, 90, 180, 270)
     //         each element is a 16 bit integer where the 16 bits represent
     //         a 4x4 set of blocks, e.g. j.blocks[0] = 0x44C0
-    //
-    //             0100 = 0x4 << 3 = 0x4000
-    //             0100 = 0x4 << 2 = 0x0400
-    //             1100 = 0xC << 1 = 0x00C0
+    //     1100 = 0xC << 1 = 0x00C0
     //             0000 = 0x0 << 0 = 0x0000
     //                               ------
     //                               0x44C0
@@ -119,6 +116,10 @@
     var s = { size: 3, blocks: [0x06C0, 0x8C40, 0x6C00, 0x4620], color: 'teal'  };
     var t = { size: 3, blocks: [0x0E40, 0x4C40, 0x4E00, 0x4640], color: 'coral' };
     var z = { size: 3, blocks: [0x0C60, 0x4C80, 0xC600, 0x2640], color: 'olive'    };
+
+    //             0100 = 0x4 << 3 = 0x4000
+    //             0100 = 0x4 << 2 = 0x0400
+    //        
 
     //------------------------------------------------
     // do the bit manipulation and iterate through each
